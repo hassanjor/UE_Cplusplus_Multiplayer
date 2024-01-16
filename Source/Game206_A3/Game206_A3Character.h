@@ -87,9 +87,11 @@ public:
 
 
 protected:
+	UFUNCTION()
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
 
+	UFUNCTION()
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
@@ -116,6 +118,7 @@ public:
 
 	//This is automatically created by unreal whenever you do UFUNCTION(Server), So I dont actually have to declare it to work,
 	//However Looking at how unreal did the character movement on the server they did declare it anyways so I will do the same 
+	UFUNCTION()
 	void Server_Fire_Implementation(FVector Location, FRotator Rotation); //implementation code for Server_Fire(FVector Location, FRotator Rotation)
 };
 

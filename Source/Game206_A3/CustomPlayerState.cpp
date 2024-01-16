@@ -113,7 +113,7 @@ void ACustomPlayerState::ModifyScore(int ScoreChange)
                      {
                          GEngine->AddOnScreenDebugMessage(-1, 20.0f, FColor::Red, FString::Printf(TEXT("PLAYER 1 (SERVER) WON")), false, FVector2D(3.0f, 3.0f));
                      }
-
+                     
                  }
                 
 

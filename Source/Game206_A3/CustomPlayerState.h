@@ -23,6 +23,7 @@ public:
 	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 	bool AllTargetsDestoryed = false;
 
+	UFUNCTION()
 	void ModifyScore(int ScoreChange); 
 
 
